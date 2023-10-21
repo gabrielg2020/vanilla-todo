@@ -1,0 +1,22 @@
+:root {
+    --white: #FFFFFF;
+    --light-gray: #FAFAFA;
+    --red: #D04640;
+}
+
+#container {
+    display:grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr 10fr;
+    height: 100vh;
+}
+
+#header {
+    grid-area: 1 / 1 / 2 / 3 ;
+    background-color: #D04640;
+}
+
+#sidebar {
+    background-color: #FAFAFA;
+    max-width: 500px;
+}
