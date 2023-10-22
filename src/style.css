@@ -19,4 +19,11 @@
 #sidebar {
     background-color: var(--light-gray);
     width: 384px;
+    transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 750px) {
+    #sidebar {
+        transform: translateX(-100%);
+    }
 }
