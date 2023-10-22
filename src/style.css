@@ -6,8 +6,8 @@
 
 #container {
     display:grid;
-    grid-template-columns: 2fr 5fr;
-    grid-template-rows: 1fr 10fr;
+    grid-template-columns: 2fr 9fr;
+    grid-template-rows: 43px;
     height: 100vh;
 }
 
