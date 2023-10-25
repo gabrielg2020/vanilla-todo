@@ -7,14 +7,15 @@
 
 #container {
     display:grid;
-    grid-template-columns: 2fr 9fr;
+    grid-template-columns: 384px 1fr;
     grid-template-rows: 43px;
     height: 100vh;
 }
 
 #header {
     grid-area: 1 / 1 / 2 / 3 ;
-    display: flex;
+    display: grid;
+    grid-template-columns: 368px 1fr;
     align-items: center;
     background-color: var(--red);
     padding: 0 1rem;
@@ -25,17 +26,17 @@
 #nav-container {
     display: flex;
     gap: 0.5rem;
-    width: 384px;
 }
 
 #search {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    background-color: #fafafa48;
+    background-color: #fafafa28;
     padding: 0.3rem 0.4rem;
     width: 100%;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .header-svg {
@@ -52,5 +53,9 @@
 @media screen and (max-width: 750px) {
     #sidebar {
         transform: translateX(-100%);
+    }
+
+    #header {
+        grid-template-columns: 40vw 1fr;
     }
 }
