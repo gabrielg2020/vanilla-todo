@@ -39,9 +39,20 @@
     border-radius: 5px;
 }
 
+#interaction-container {
+    justify-self: end;
+    display: flex;
+    gap: 1rem;
+}
+
 .header-svg {
     width: 1.5rem;
     cursor: pointer;
+}
+
+#profile-picture {
+    border-radius: 100%;
+    width: 1.5rem;
 }
 
 #sidebar {
