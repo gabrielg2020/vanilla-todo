@@ -1,7 +1,8 @@
 :root {
     --white: #FFFFFF;
     --light-gray: #FAFAFA;
-    --red: #DC4C3E;
+    --red: #dc4b3e;
+    font-family: 'Roboto', sans-serif;
 }
 
 #container {
@@ -13,7 +14,33 @@
 
 #header {
     grid-area: 1 / 1 / 2 / 3 ;
+    display: flex;
+    align-items: center;
     background-color: var(--red);
+    padding: 0 1rem;
+    color: var(--white);
+    font-weight: 300;
+}
+
+#nav-container {
+    display: flex;
+    gap: 0.5rem;
+    width: 384px;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: #fafafa48;
+    padding: 0.3rem 0.4rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.header-svg {
+    width: 1.5rem;
+    cursor: pointer;
 }
 
 #sidebar {
@@ -24,6 +51,6 @@
 
 @media screen and (max-width: 750px) {
     #sidebar {
-        transform: translateX(100%);
+        transform: translateX(-100%);
     }
 }
